@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: px;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: rgb(18, 24, 17);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/*#div{
+    color: blue;
+    font-style: italic;
+}*/
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+#navbar ul li{
+
+    
+    align-items: center;
+    list-style: none;
+    font-size: 2.1rem;
+}
+
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 416px;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("../img/bc1-transformed.jpg") no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/*services section*/
+
+
+
+
+/*utlity class*/
+.h-primary{
+    font-size: 3.0rem;
+    padding: 12px;
+    font-family: 'Bree serif',serif;
+}
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 22px;
+    background-color: rgba(235, 241, 241, 0.699);
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree serif',serif;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree serif',serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(231, 91, 91);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    background-color: aqua;
+    
+}
+#services .box{
+    border: 3px solid rgb(190, 7, 7);
+
+    padding: 15px;
+    margin: 5px 7px;
+    border-radius: 23px;
+    background-color: rgb(238, 236, 234);
+}
+#services .box img{
+    height: 160px;
+    
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree serif',serif;
+
+}
+
+#clients{
+    height: 344px;
+
+}
+#client-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 200px;
+    
+}
